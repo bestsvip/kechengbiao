@@ -1143,7 +1143,7 @@
                 const delrows = +nodes[1] - nodes[0] + 1;
                 const rowSpanCell = getCourseInfo(nodes[0], weekLesson[index]);
                 rowSpanCell.rowSpan = delrows;
-                const txt = '<strong>' + data[index]['课程名字'] + '</strong> [' + data[index]['符号'] + data[index]['类型'] + ']<div style="padding:2px 0 2px 0;margin:2px 0 2px 0;letter-spacing: -1px;">@' + data[index]['教学楼'] + '</div>' + data[index]['教师'] + '<br>' + data[index]['学分']
+                const txt = '<strong>' + data[index]['课程名字'] + '</strong> <div style="font-size:10px">[' + data[index]['符号'] + data[index]['类型'] + ']</div><div style="padding:2px 0 2px 0;margin:2px 0 2px 0;letter-spacing: -1px;">@' + data[index]['教学楼'] + '</div>' + data[index]['教师'] + '<br>' + data[index]['学分']
                 rowSpanCell.innerHTML = txt
                 rowSpanCell.style.backgroundColor = randomHSLA()
                 for (let i = +nodes[0] + 1; i <= nodes[1]; i++) {
