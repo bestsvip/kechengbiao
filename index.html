@@ -6,9 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>课表</title>
     <style>
-        table {
-            width: 100%;
+        *,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
             height: 100vh;
+        }
+
+        table {
+            width: 98%;
+            height: calc(100vh - 40px);
             table-layout: fixed;
         }
 
@@ -48,7 +58,7 @@
 </head>
 
 <body>
-    <div>
+    <div style="line-height: 30px;">
         <div style="float: left;">
             工设(专升本)241
         </div>
@@ -58,8 +68,6 @@
             </select>
         </div>
     </div>
-    <br>
-    <br>
     <script>
         const totalWeeks = 24;
         const weekSelect = document.getElementById('weekSelect');
